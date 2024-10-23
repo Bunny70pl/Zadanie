@@ -5,17 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingTop="20dp"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Doemk w górach" />
+        android:textSize="32dp"
+        android:text="Domek w górach" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
         app:srcCompat="@drawable/obraz" />
 
     <LinearLayout
@@ -51,24 +54,28 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="right"
         android:text="0 polubien" />
 
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:backgroundTint="#808080"
         android:background="?android:attr/listDivider" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:text="Opis" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#808080"
         android:text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych" />
 
 </LinearLayout>
